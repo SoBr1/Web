@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title> МАЙКРААААААААААААААААФТ </title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>{{vopros}}</h1>
+    <form method="POST" action="/test">
+        {% for answer in all_answers %}
+        <p> <input type="radio" value="{{answer}}" name="fresh"> {{answer}} </p>
+        {% endfor %}
+        <input type="submit">
+        <input type="hidden" value = "{{right_answer}}" name="right_answer">
+    </form>
+
+</body>
+
+</html>

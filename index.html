@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title> ВИКТОРИНЫ </title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Виторины!</h1>
+    <form method="POST" action="/setN">
+        <h1>Выбери викторину!</h1>
+        <select name="victorID">
+            {% for victorina in victoryni %}
+            <option value="{{victorina[0]}}">{{victorina[1]}}</option>
+            {%endfor%}
+        </select>
+<input type="submit">
+    </form>
+</body>
+
+</html>
+

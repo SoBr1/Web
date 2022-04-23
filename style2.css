@@ -1,0 +1,11 @@
+body{
+    background-color: yellowgreen;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    margin: 20px;
+    font-size: large;
+}
